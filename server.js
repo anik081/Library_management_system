@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 
 var indexController = require('./controllers/indexController');
 var authorController = require('./controllers/authorsController');
+var bookController = require('./controllers/booksController');
 
 app.set('view engine','ejs');
 app.set('views',__dirname + '/views');
@@ -32,6 +33,6 @@ db.once('open', function (){
 
 app.use('/', indexController);
 app.use('/authors', authorController);
-
+app.use('/books', bookController);
 
 app.listen(process.env.PORT ||  3000);
