@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome</title>
+    <link rel="stylesheet" href="\stylesheets\main.css">
   </head>
   <body>
-    <br>
+    <div class="container">
     <%- include('../partials/headers.ejs') %>
+    </div>
+    <div class="inner-container">
     <%- include('../partials/errorMessage.ejs') %>
-    <br>
     <%- body %>
+    </div>
+
   </body>
 </html>
