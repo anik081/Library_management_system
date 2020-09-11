@@ -3,9 +3,10 @@
 @import "shared/header.css";
 @import "shared/buttons.css";
 @import "shared/form.css";
+@import "shared/books.css";
 :root{
   font-family: 'GothamRounded';
-  font-size:  : 20px;
+  font-size: 20px;
   color: var(--color-text-light);
 }
 *, *::before,*::after{
@@ -24,4 +25,12 @@ body{
 
 .inner-container{
   margin: 0 2rem;
+}
+
+
+.error-message{
+  color: red;
+}
+.heroku-warning{
+  color:red;
 }
